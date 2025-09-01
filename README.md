@@ -284,10 +284,6 @@ Os logs são estruturados em JSON e incluem:
 
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## Suporte
-
-- **Issues**: https://github.com/tramontano/personal-trainer-app/issues
-
 ## Roadmap
 
 Veja nosso [roadmap detalhado](docs/roadmap.md) para conhecer as próximas funcionalidades e melhorias planejadas.
