@@ -1,3 +1,10 @@
+# 1.0.0 (2025-09-01)
+
+
+### Features
+
+* configuração inicial do projeto ([fd218b4](https://github.com/tramontano/personal-trainer/commit/fd218b45b12ea189617efb225d9c7918e1643b41)), closes [#1](https://github.com/tramontano/personal-trainer/issues/1)
+
 # Changelog
 
 Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
@@ -123,4 +130,3 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - `Removed` para funcionalidades removidas
 - `Fixed` para correções de bugs
 - `Security` para correções de vulnerabilidades
-
