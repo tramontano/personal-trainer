@@ -1,13 +1,13 @@
 # TODO - Personal Trainer App
 
-## ✅ Fase 1: Configuração Inicial e Infraestrutura (Semanas 1-2)
+## Fase 1: Configuração Inicial e Infraestrutura (Semanas 1-2)
 - [x] Análise do site de referência Exercise.com
 - [x] Levantamento de funcionalidades principais
 - [x] Criação da estrutura técnica do projeto
 - [x] Definição da arquitetura Django
 - [x] Criação do roadmap detalhado
 - [x] Geração de arquivos organizacionais para GitHub
-- [ ] Setup do repositório Git
+- [x] Setup do repositório Git
 - [ ] Configuração do ambiente de desenvolvimento
 - [ ] Instalação e configuração do PostgreSQL
 - [ ] Configuração do Redis
@@ -18,7 +18,7 @@
 - [ ] Setup de testes automatizados
 - [ ] Configuração de CI/CD básico
 
-## 🔄 Fase 2: Sistema de Autenticação e Usuários (Semanas 3-4)
+## Fase 2: Sistema de Autenticação e Usuários (Semanas 3-4)
 - [ ] Criação do modelo User customizado
 - [ ] Implementação de registro de usuários
 - [ ] Sistema de verificação de email
@@ -32,7 +32,7 @@
 - [ ] Testes unitários para autenticação
 - [ ] Documentação da API de autenticação
 
-## 🔄 Fase 3: Sistema de Agendamento e Calendário (Semanas 5-7)
+## Fase 3: Sistema de Agendamento e Calendário (Semanas 5-7)
 - [ ] Criação do modelo Appointment
 - [ ] Sistema de disponibilidade para trainers
 - [ ] Lógica de validação de conflitos
@@ -45,7 +45,7 @@
 - [ ] Testes para sistema de agendamento
 - [ ] Documentação da API de agendamento
 
-## 🔄 Fase 4: Sistema de Treinos e Exercícios (Semanas 8-10)
+## Fase 4: Sistema de Treinos e Exercícios (Semanas 8-10)
 - [ ] Criação da biblioteca de exercícios
 - [ ] Modelos para planos de treino
 - [ ] Sistema de categorização de exercícios
@@ -58,7 +58,7 @@
 - [ ] Testes para sistema de treinos
 - [ ] Documentação da API de treinos
 
-## 🔄 Fase 5: Sistema de Pagamentos (Semanas 11-12)
+## Fase 5: Sistema de Pagamentos (Semanas 11-12)
 - [ ] Integração completa com Stripe
 - [ ] Configuração de webhooks
 - [ ] Sistema de métodos de pagamento
@@ -71,7 +71,7 @@
 - [ ] Testes para sistema de pagamentos
 - [ ] Documentação da API de pagamentos
 
-## 🔄 Fase 6: Sistema de Marketing e CRM (Semanas 13-14)
+## Fase 6: Sistema de Marketing e CRM (Semanas 13-14)
 - [ ] Implementação do CRM
 - [ ] Sistema de gestão de leads
 - [ ] Pipeline de vendas
@@ -84,7 +84,7 @@
 - [ ] Testes para sistema de marketing
 - [ ] Documentação da API de marketing
 
-## 🔄 Fase 7: Analytics e Relatórios (Semanas 15-16)
+## Fase 7: Analytics e Relatórios (Semanas 15-16)
 - [ ] Dashboard de analytics interativo
 - [ ] Sistema de coleta de métricas
 - [ ] Relatórios de receita
@@ -96,7 +96,7 @@
 - [ ] Testes para sistema de analytics
 - [ ] Documentação da API de analytics
 
-## 🔄 Fase 8: Sistema de Notificações (Semanas 17-18)
+## Fase 8: Sistema de Notificações (Semanas 17-18)
 - [ ] Infraestrutura de notificações com Celery
 - [ ] Integração com SendGrid para email
 - [ ] Integração com Twilio para SMS
@@ -108,7 +108,7 @@
 - [ ] Testes para sistema de notificações
 - [ ] Documentação da API de notificações
 
-## 🔄 Fase 9: Testes e Qualidade (Semanas 19-20)
+## Fase 9: Testes e Qualidade (Semanas 19-20)
 - [ ] Suíte completa de testes unitários
 - [ ] Testes de integração para APIs
 - [ ] Testes end-to-end para fluxos críticos
@@ -121,7 +121,7 @@
 - [ ] Sistema de monitoramento
 - [ ] Logging estruturado
 
-## 🔄 Fase 10: Deploy e Produção (Semanas 21-22)
+## Fase 10: Deploy e Produção (Semanas 21-22)
 - [ ] Configuração do ambiente de produção
 - [ ] Setup de servidores
 - [ ] Configuração de load balancers
@@ -135,7 +135,7 @@
 - [ ] Documentação operacional
 - [ ] Testes de carga
 
-## 📋 Tarefas Transversais
+## Tarefas Transversais
 - [ ] Documentação técnica completa
 - [ ] Guias de instalação e configuração
 - [ ] Documentação da API com Swagger
@@ -149,7 +149,7 @@
 - [ ] Alertas de monitoramento
 - [ ] Configuração de SSL/TLS
 
-## 🎯 Marcos Importantes
+## Marcos Importantes
 - [ ] **Marco 1 (Semana 4)**: MVP de Autenticação
 - [ ] **Marco 2 (Semana 7)**: Sistema de Agendamento
 - [ ] **Marco 3 (Semana 10)**: Plataforma de Treinos
@@ -157,7 +157,7 @@
 - [ ] **Marco 5 (Semana 18)**: Plataforma Completa
 - [ ] **Marco 6 (Semana 22)**: Produção
 
-## 🔍 Revisões e Validações
+## Revisões e Validações
 - [ ] Revisão de código semanal
 - [ ] Testes de usabilidade
 - [ ] Validação de performance
@@ -167,7 +167,7 @@
 - [ ] Testes de aceitação
 - [ ] Preparação para lançamento
 
-## 📝 Notas
+## Notas
 - Todas as tarefas devem incluir testes automatizados
 - Documentação deve ser atualizada a cada feature
 - Code review obrigatório para todas as mudanças
@@ -176,7 +176,7 @@
 
 
 
-## 🎯 Especificações do Projeto (Baseado no Feedback do Cliente)
+## Especificações do Projeto (Baseado no Feedback do Cliente)
 
 ### Público-Alvo e Mercado
 - **Foco**: Personal trainers independentes
@@ -187,7 +187,7 @@
 ### Modelo de Negócio
 - **Licença**: Open-source (MIT License)
 - **Monetização**: Serviços profissionais para customização/implementação/manutenção
-- **Precificação**: Sistema flexível onde cada trainer define valor por cliente
+- **Precificação**: Sistema flexível onde cada personal trainer define valor por cliente
 - **Estratégia**: Comunidade open-source + serviços profissionais
 
 ### Funcionalidades Prioritárias Adicionais
@@ -315,7 +315,7 @@
   - [ ] Relatórios de privacidade
   - [ ] Auditoria de dados pessoais
 
-## 📱 Roadmap Mobile Específico
+## Roadmap Mobile Específico
 
 ### Fase Mobile 1: Planejamento (Semana 3)
 - [ ] Definição da tecnologia mobile
@@ -343,7 +343,7 @@
 - [ ] Integração com wearables
 - [ ] Publicação nas stores
 
-## 🌍 Roadmap de Internacionalização
+## Roadmap de Internacionalização
 
 ### Fase i18n 1: Configuração Base (Semana 2)
 - [ ] Setup do Django i18n
@@ -363,7 +363,7 @@
 - [ ] Suporte a múltiplas moedas
 - [ ] Adaptação cultural
 
-## 🔄 Prioridades Revisadas
+## Prioridades Revisadas
 
 ### Alta Prioridade (Essencial para MVP)
 1. Sistema de avaliação física digital
@@ -385,4 +385,3 @@
 3. Sistema de aulas em grupo
 4. Marketplace de trainers
 5. IA para recomendações
-
