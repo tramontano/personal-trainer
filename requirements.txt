@@ -6,7 +6,7 @@ django-filter==23.3
 djangorestframework-simplejwt==5.5.1
 
 # Database
-psycopg2-binary==2.9.7
+psycopg2-binary==2.9.10
 redis==5.0.1
 
 # Configuration
@@ -22,7 +22,7 @@ drf-spectacular==0.26.5
 # File Upload & Storage
 Pillow==11.3.0
 django-storages==1.14.2
-boto3==1.29.7
+boto3==1.40.21
 
 # Payments
 stripe==7.7.0
@@ -62,3 +62,67 @@ gunicorn==23.0.0
 whitenoise==6.6.0
 dj-database-url==2.1.0
 
+# Transitive dependency management
+urllib3==2.5.0
+aiohappyeyeballs==2.6.1
+aiohttp==3.12.15
+aiohttp-retry==2.9.1
+aiosignal==1.4.0
+amqp==5.3.1
+asgiref==3.9.1
+attrs==25.3.0
+billiard==4.2.1
+botocore==1.40.21
+certifi==2025.8.3
+cffi==1.17.1
+cfgv==3.4.0
+charset-normalizer==3.4.3
+click==8.2.1
+click-didyoumean==0.3.1
+click-plugins==1.1.1.2
+click-repl==0.3.0
+colorama==0.4.6
+cron_descriptor==2.0.5
+distlib==0.4.0
+django-timezone-field==7.1
+filelock==3.19.1
+frozenlist==1.7.0
+identify==2.6.13
+idna==3.10
+inflection==0.5.1
+iniconfig==2.1.0
+jmespath==1.0.1
+jsonschema==4.25.1
+jsonschema-specifications==2025.4.1
+kombu==5.5.4
+mccabe==0.7.0
+multidict==6.6.4
+mypy_extensions==1.1.0
+nodeenv==1.9.1
+packaging==25.0
+pathspec==0.12.1
+platformdirs==4.4.0
+pluggy==1.6.0
+prompt_toolkit==3.0.52
+propcache==0.3.2
+pycodestyle==2.11.1
+pycparser==2.22
+pyflakes==3.1.0
+python-crontab==3.3.0
+python-dateutil==2.9.0.post0
+python-http-client==3.3.7
+PyYAML==6.0.2
+referencing==0.36.2
+requests==2.32.5
+rpds-py==0.27.1
+s3transfer==0.13.1
+six==1.17.0
+sqlparse==0.5.3
+starkbank-ecdsa==2.2.0
+typing_extensions==4.15.0
+tzdata==2025.2
+uritemplate==4.2.0
+vine==5.1.0
+virtualenv==20.34.0
+wcwidth==0.2.13
+yarl==1.20.1
