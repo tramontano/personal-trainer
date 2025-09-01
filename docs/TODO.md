@@ -1,6 +1,6 @@
 # TODO - Personal Trainer App
 
-## Fase 1: Configuração Inicial e Infraestrutura (Semanas 1-2)
+## Fase 1: Configuração Inicial e Infraestrutura
 - [x] Análise do site de referência Exercise.com
 - [x] Levantamento de funcionalidades principais
 - [x] Criação da estrutura técnica do projeto
@@ -18,7 +18,7 @@
 - [ ] Setup de testes automatizados
 - [ ] Configuração de CI/CD básico
 
-## Fase 2: Sistema de Autenticação e Usuários (Semanas 3-4)
+## Fase 2: Sistema de Autenticação e Usuários
 - [ ] Criação do modelo User customizado
 - [ ] Implementação de registro de usuários
 - [ ] Sistema de verificação de email
@@ -32,7 +32,7 @@
 - [ ] Testes unitários para autenticação
 - [ ] Documentação da API de autenticação
 
-## Fase 3: Sistema de Agendamento e Calendário (Semanas 5-7)
+## Fase 3: Sistema de Agendamento e Calendário
 - [ ] Criação do modelo Appointment
 - [ ] Sistema de disponibilidade para trainers
 - [ ] Lógica de validação de conflitos
@@ -45,7 +45,7 @@
 - [ ] Testes para sistema de agendamento
 - [ ] Documentação da API de agendamento
 
-## Fase 4: Sistema de Treinos e Exercícios (Semanas 8-10)
+## Fase 4: Sistema de Treinos e Exercícios
 - [ ] Criação da biblioteca de exercícios
 - [ ] Modelos para planos de treino
 - [ ] Sistema de categorização de exercícios
@@ -58,7 +58,7 @@
 - [ ] Testes para sistema de treinos
 - [ ] Documentação da API de treinos
 
-## Fase 5: Sistema de Pagamentos (Semanas 11-12)
+## Fase 5: Sistema de Pagamentos
 - [ ] Integração completa com Stripe
 - [ ] Configuração de webhooks
 - [ ] Sistema de métodos de pagamento
@@ -71,7 +71,7 @@
 - [ ] Testes para sistema de pagamentos
 - [ ] Documentação da API de pagamentos
 
-## Fase 6: Sistema de Marketing e CRM (Semanas 13-14)
+## Fase 6: Sistema de Marketing e CRM
 - [ ] Implementação do CRM
 - [ ] Sistema de gestão de leads
 - [ ] Pipeline de vendas
@@ -84,7 +84,7 @@
 - [ ] Testes para sistema de marketing
 - [ ] Documentação da API de marketing
 
-## Fase 7: Analytics e Relatórios (Semanas 15-16)
+## Fase 7: Analytics e Relatórios
 - [ ] Dashboard de analytics interativo
 - [ ] Sistema de coleta de métricas
 - [ ] Relatórios de receita
@@ -96,7 +96,7 @@
 - [ ] Testes para sistema de analytics
 - [ ] Documentação da API de analytics
 
-## Fase 8: Sistema de Notificações (Semanas 17-18)
+## Fase 8: Sistema de Notificações
 - [ ] Infraestrutura de notificações com Celery
 - [ ] Integração com SendGrid para email
 - [ ] Integração com Twilio para SMS
@@ -108,7 +108,7 @@
 - [ ] Testes para sistema de notificações
 - [ ] Documentação da API de notificações
 
-## Fase 9: Testes e Qualidade (Semanas 19-20)
+## Fase 9: Testes e Qualidade
 - [ ] Suíte completa de testes unitários
 - [ ] Testes de integração para APIs
 - [ ] Testes end-to-end para fluxos críticos
@@ -121,7 +121,7 @@
 - [ ] Sistema de monitoramento
 - [ ] Logging estruturado
 
-## Fase 10: Deploy e Produção (Semanas 21-22)
+## Fase 10: Deploy e Produção
 - [ ] Configuração do ambiente de produção
 - [ ] Setup de servidores
 - [ ] Configuração de load balancers
