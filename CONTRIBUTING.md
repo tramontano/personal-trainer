@@ -2,7 +2,7 @@
 
 Obrigado por considerar contribuir para o Personal Trainer App! Este documento fornece diretrizes para contribuir com o projeto.
 
-## 📋 Índice
+## Índice
 
 - [Código de Conduta](#código-de-conduta)
 - [Como Contribuir](#como-contribuir)
@@ -12,34 +12,34 @@ Obrigado por considerar contribuir para o Personal Trainer App! Este documento f
 - [Reportando Bugs](#reportando-bugs)
 - [Sugerindo Melhorias](#sugerindo-melhorias)
 
-## 📜 Código de Conduta
+## Código de Conduta
 
 Este projeto adere ao [Código de Conduta do Contributor Covenant](CODE_OF_CONDUCT.md). Ao participar, você deve seguir este código.
 
-## 🤝 Como Contribuir
+## Como Contribuir
 
 Existem várias maneiras de contribuir:
 
-### 🐛 Reportando Bugs
+### Reportando Bugs
 - Use o template de issue para bugs
 - Inclua informações detalhadas sobre o ambiente
 - Forneça passos para reproduzir o problema
 - Inclua logs relevantes
 
-### 💡 Sugerindo Melhorias
+### Sugerindo Melhorias
 - Use o template de issue para feature requests
 - Explique claramente o problema que a feature resolve
 - Descreva a solução proposta
 - Considere alternativas
 
-### 🔧 Contribuindo com Código
+### Contribuindo com Código
 - Fork o repositório
 - Crie uma branch para sua feature
 - Implemente as mudanças
 - Adicione testes
 - Submeta um pull request
 
-## 🛠️ Configuração do Ambiente
+## Configuração do Ambiente
 
 ### Pré-requisitos
 - Python 3.9+
@@ -51,7 +51,7 @@ Existem várias maneiras de contribuir:
 
 1. **Fork e clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/personal-trainer-app.git
+git clone https://github.com/tramontano/personal-trainer-app.git
 cd personal-trainer-app
 ```
 
@@ -90,7 +90,7 @@ python manage.py test
 docker-compose up -d
 ```
 
-## 📝 Padrões de Código
+## Padrões de Código
 
 ### Python/Django
 
@@ -369,7 +369,7 @@ class PersonalTrainerFactory(factory.django.DjangoModelFactory):
     bio = factory.Faker('text')
 ```
 
-## 🔄 Processo de Pull Request
+## Processo de Pull Request
 
 ### Antes de Submeter
 
@@ -447,73 +447,84 @@ Closes #123
 Related to #456
 ```
 
-## 🐛 Reportando Bugs
+## Reportando Bugs
 
 ### Template de Bug Report
 
 ```markdown
 ## Descrição do Bug
-Descrição clara e concisa do problema.
+Uma descrição clara e concisa do que é o bug. Qual comportamento inesperado você observou?
 
 ## Passos para Reproduzir
+Passos para reproduzir o bug:
 1. Vá para '...'
 2. Clique em '...'
 3. Role até '...'
 4. Veja o erro
 
 ## Comportamento Esperado
-Descrição do que deveria acontecer.
+Uma descrição clara e concisa do que você esperava que acontecesse.
 
 ## Comportamento Atual
-Descrição do que está acontecendo.
+Uma descrição clara e concisa do que realmente aconteceu.
 
 ## Screenshots
-Se aplicável, adicione screenshots.
+Se aplicável, adicione screenshots para ajudar a explicar o problema.
 
 ## Ambiente
-- OS: [e.g. Ubuntu 20.04]
+- Sistema Operacional: [e.g. Windows 10, macOS Ventura, Ubuntu 22.04]
+- Versão do Projeto: [e.g. v1.0.0, main branch, commit hash]
 - Python: [e.g. 3.9.7]
 - Django: [e.g. 4.2.7]
-- Browser: [e.g. Chrome 91.0]
+- Navegador: [e.g. Chrome 120, Firefox 119, Safari 17]
 
 ## Informações Adicionais
-Qualquer outra informação relevante.
+Qualquer outra informação relevante sobre o problema, como logs de erro, mensagens do console, ou contexto adicional que possa ser útil para a depuração.
+
+'''
+# Cole logs de erro aqui, se houver
+'''
 ```
 
-## 💡 Sugerindo Melhorias
+## Sugerindo Melhorias
 
 ### Template de Feature Request
 
 ```markdown
 ## Resumo da Feature
-Descrição breve da funcionalidade proposta.
+Uma descrição clara e concisa da funcionalidade que você gostaria de ver implementada.
 
 ## Problema que Resolve
-Explicação clara do problema que esta feature resolve.
+Descreva o problema que esta nova funcionalidade resolveria ou a necessidade que ela atenderia. Por que esta funcionalidade é importante?
 
 ## Solução Proposta
-Descrição detalhada da solução.
+Descreva em detalhes como você imagina que esta funcionalidade funcionaria. Inclua:
+- **Funcionalidades Específicas**: Quais ações o usuário poderia realizar?
+- **Fluxo de Usuário**: Como o usuário interagiria com a nova funcionalidade?
+- **Integrações**: Se houver, com quais sistemas ou outras funcionalidades ela se integraria?
+- **Impacto Esperado**: Como esta funcionalidade beneficiaria os usuários ou o projeto?
 
 ## Alternativas Consideradas
-Outras soluções que foram consideradas.
+Você considerou alguma solução alternativa ou abordagens diferentes para resolver o mesmo problema? Se sim, quais e por que a solução proposta é preferível?
 
 ## Informações Adicionais
-- Mockups ou wireframes
-- Referências de outras aplicações
-- Impacto estimado
+Adicione qualquer contexto adicional ou screenshots/mockups que possam ajudar a entender melhor a sua sugestão.
+- Link para mockups ou wireframes (se houver)
+- Link para exemplos em outras plataformas (se houver)
+- Qualquer outra informação relevante
 ```
 
-## 📚 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação do Django](https://docs.djangoproject.com/)
 - [Django REST Framework](https://www.django-rest-framework.org/)
 - [PEP 8 Style Guide](https://pep8.org/)
 - [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)
 
-## 🆘 Precisa de Ajuda?
+## Precisa de Ajuda?
 
 - Abra uma issue com a tag `question`
-- Entre em contato via email: dev@personaltrainerapp.com
+- Entre em contato via email: tramontanophillipe@gmail.com
 - Consulte a documentação do projeto
 
 Obrigado por contribuir! 🎉
