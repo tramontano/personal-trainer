@@ -2,12 +2,12 @@
 
 Uma plataforma completa e open-source para personal trainers independentes gerenciarem seus negócios, com foco em musculação e treinamento funcional. Inspirada no Exercise.com, desenvolvida com Django e PostgreSQL.
 
-## 🎯 Visão Geral
+## Visão Geral
 
 Esta plataforma open-source oferece uma solução completa para personal trainers independentes, especialmente focada em:
 
 - **Público-Alvo**: Personal trainers independentes no Brasil
-- **Especialização**: Musculação e treinamento funcional  
+- **Especialização**: Musculação e treinamento funcional
 - **Modelo**: Open-source com serviços profissionais opcionais
 - **Escalabilidade**: Projetado para até 200 usuários iniciais
 
@@ -17,13 +17,13 @@ Esta plataforma open-source oferece uma solução completa para personal trainer
 - **Avaliação Física Digital**: Anamnese, medidas, fotos de progresso, cálculos automáticos
 - **Agendamento Inteligente**: Calendário integrado, sincronização com Google Calendar
 - **Planos de Treino**: Biblioteca especializada em musculação e funcional
-- **Precificação Flexível**: Cada trainer define valores individuais por cliente
+- **Precificação Flexível**: Cada personal trainer define valores individuais por cliente
 - **Aplicativo Mobile**: Apps nativos para trainers e clientes
 - **Integrações**: WhatsApp, Instagram, Google Calendar
 - **Internacionalização**: Português, Inglês e Espanhol
 - **Analytics**: Relatórios de negócio, métricas de performance
 
-## 🚀 Tecnologias
+## Tecnologias
 
 - **Backend**: Django 4.2+ com Django REST Framework
 - **Banco de Dados**: PostgreSQL 14+
@@ -33,7 +33,7 @@ Esta plataforma open-source oferece uma solução completa para personal trainer
 - **Deploy**: Docker + Docker Compose
 - **Monitoramento**: New Relic / DataDog
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 - Python 3.9+
 - PostgreSQL 14+
@@ -41,13 +41,13 @@ Esta plataforma open-source oferece uma solução completa para personal trainer
 - Node.js 16+ (para frontend)
 - Docker (opcional)
 
-## 🛠️ Instalação
+## Instalação
 
 ### Desenvolvimento Local
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/personal-trainer-app.git
+git clone https://github.com/tramontano/personal-trainer-app.git
 cd personal-trainer-app
 ```
 
@@ -91,7 +91,7 @@ python manage.py runserver
 docker-compose up -d
 ```
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 personal-trainer-app/
@@ -116,7 +116,7 @@ personal-trainer-app/
 └── docker-compose.yml  # Configuração Docker
 ```
 
-## 🔧 Configuração
+## Configuração
 
 ### Variáveis de Ambiente
 
@@ -154,7 +154,7 @@ TWILIO_AUTH_TOKEN=seu-auth-token
 TWILIO_PHONE_NUMBER=+1234567890
 ```
 
-## 🧪 Testes
+## Testes
 
 Execute todos os testes:
 ```bash
@@ -168,7 +168,7 @@ coverage report
 coverage html
 ```
 
-## 📚 API Documentation
+## API Documentation
 
 A documentação da API está disponível em:
 - **Swagger UI**: http://localhost:8000/api/docs/
@@ -205,7 +205,7 @@ A documentação da API está disponível em:
 - `POST /api/payments/confirm/` - Confirmar pagamento
 - `GET /api/payments/history/` - Histórico de pagamentos
 
-## 🚀 Deploy
+## Deploy
 
 ### Produção com Docker
 
@@ -235,7 +235,7 @@ sudo -u postgres createuser --interactive
 2. **Deploy da aplicação**
 ```bash
 # Clone e configure
-git clone https://github.com/seu-usuario/personal-trainer-app.git
+git clone https://github.com/tramontano/personal-trainer-app.git
 cd personal-trainer-app
 pip install -r requirements/production.txt
 
@@ -247,7 +247,7 @@ python manage.py collectstatic
 gunicorn config.wsgi:application --bind 0.0.0.0:8000
 ```
 
-## 📊 Monitoramento
+## Monitoramento
 
 ### Métricas Importantes
 
@@ -264,7 +264,7 @@ Os logs são estruturados em JSON e incluem:
 - Eventos de negócio
 - Métricas de performance
 
-## 🤝 Contribuição
+## Contribuição
 
 1. **Fork o projeto**
 2. **Crie uma branch para sua feature** (`git checkout -b feature/AmazingFeature`)
@@ -280,36 +280,26 @@ Os logs são estruturados em JSON e incluem:
 - Mantenha cobertura de testes > 80%
 - Use docstrings para funções e classes
 
-## 📄 Licença
+## Licença
 
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 👥 Equipe
+## Suporte
 
-- **Tech Lead**: [Nome do Tech Lead]
-- **Backend Developers**: [Nomes dos Desenvolvedores]
-- **Frontend Developer**: [Nome do Frontend]
-- **DevOps Engineer**: [Nome do DevOps]
-- **QA Engineer**: [Nome do QA]
+- **Issues**: https://github.com/tramontano/personal-trainer-app/issues
 
-## 📞 Suporte
-
-- **Email**: suporte@personaltrainerapp.com
-- **Documentação**: https://docs.personaltrainerapp.com
-- **Issues**: https://github.com/seu-usuario/personal-trainer-app/issues
-
-## 🗺️ Roadmap
+## Roadmap
 
 Veja nosso [roadmap detalhado](docs/roadmap.md) para conhecer as próximas funcionalidades e melhorias planejadas.
 
-## 📈 Status do Projeto
+## Status do Projeto
 
-![Build Status](https://img.shields.io/github/workflow/status/seu-usuario/personal-trainer-app/CI)
-![Coverage](https://img.shields.io/codecov/c/github/seu-usuario/personal-trainer-app)
-![License](https://img.shields.io/github/license/seu-usuario/personal-trainer-app)
-![Version](https://img.shields.io/github/v/release/seu-usuario/personal-trainer-app)
+![Build Status](https://img.shields.io/github/workflow/status/tramontano/personal-trainer-app/CI)
+![Coverage](https://img.shields.io/codecov/c/github/tramontano/personal-trainer-app)
+![License](https://img.shields.io/github/license/tramontano/personal-trainer-app)
+![Version](https://img.shields.io/github/v/release/tramontano/personal-trainer-app)
 
 ---
 
-**Desenvolvido com ❤️ pela equipe Personal Trainer App**
+**Desenvolvido com ❤️ pela comunidade**
 
