@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/tramontano/personal-trainer/compare/v1.0.0...v1.1.0) (2025-09-01)
+
+
+### Features
+
+* estrutura base do projeto Django ([996e89a](https://github.com/tramontano/personal-trainer/commit/996e89a80acbc7b35f145a27529533b4e975cbe6)), closes [#2](https://github.com/tramontano/personal-trainer/issues/2)
+
 # 1.0.0 (2025-09-01)
 
 
