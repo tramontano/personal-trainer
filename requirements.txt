@@ -33,7 +33,7 @@ twilio==8.10.0
 
 # Background Tasks
 celery==5.3.4
-django-celery-beat==2.5.0
+django-celery-beat==2.8.1
 django-celery-results==2.5.1
 
 # Monitoring & Logging
