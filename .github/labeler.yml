@@ -1,0 +1,39 @@
+documentation:
+  - ".github/*"
+  - "docs/*"
+  - "*.md"
+
+feature:
+  - "apps/**"
+  - "config/**"
+  - "!apps/*/tests/**"
+
+bug:
+  - "apps/*/tests/**"
+  - "!apps/*/tests/factories.py"
+
+config:
+  - "*.yml"
+  - "*.yaml"
+  - "*.toml"
+  - "*.ini"
+  - ".env.example"
+  - "Dockerfile"
+  - "docker-compose.yml"
+  - "requirements.txt"
+
+i18n:
+  - "locale/**"
+
+mobile:
+  - "mobile/**"
+
+testing:
+  - "tests/**"
+  - "*test*.py"
+
+deploy:
+  - "deploy/**"
+  - ".github/workflows/deploy.yml"
+
+
