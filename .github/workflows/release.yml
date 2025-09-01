@@ -1,0 +1,52 @@
+name: Release Drafter and Changelog Automation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_release_and_changelog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Required for semantic-release to analyze all history
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install semantic-release and plugins
+        run: |
+          npm install semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/exec
+
+      - name: Configure Git User
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
+
+      - name: Create GitHub Release (if new version)
+        id: create_release
+        uses: actions/create-release@v1
+        if: steps.semantic_release.outputs.new_release_published == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.semantic_release.outputs.new_release_tag }}
+          release_name: Release ${{ steps.semantic_release.outputs.new_release_tag }}
+          body: ${{ steps.semantic_release.outputs.new_release_notes }}
+          draft: false
+          prerelease: false
