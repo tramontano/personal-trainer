@@ -94,6 +94,6 @@ jobs:
           s_max_size: '100'
           m_max_size: '500'
           l_max_size: '1000'
-          xl_max_size: '2000'
+          xl_label: 'size/xl'
           fail_if_xl: 'false'
           message_if_xl: '> 🚨 This PR is very large, consider splitting it into smaller ones.'
