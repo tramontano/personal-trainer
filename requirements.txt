@@ -20,7 +20,7 @@ PyJWT==2.8.0
 drf-spectacular==0.26.5
 
 # File Upload & Storage
-Pillow==10.0.1
+Pillow==11.3.0
 django-storages==1.14.2
 boto3==1.29.7
 
