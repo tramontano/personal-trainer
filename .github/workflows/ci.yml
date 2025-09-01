@@ -47,11 +47,13 @@ jobs:
     - name: Run migrations
       run: python manage.py migrate
       env:
+        DJANGO_SETTINGS_MODULE: config.settings.development
         DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
 
     - name: Run tests
       run: python manage.py test
       env:
+        DJANGO_SETTINGS_MODULE: config.settings.development
         DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
         REDIS_URL: redis://localhost:6379/0
 
