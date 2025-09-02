@@ -44,6 +44,7 @@ jobs:
     
     - name: Install dependencies
       run: |
+        export SECRET_KEY=${{ secrets.SECRET_KEY }}
         python -m pip install --upgrade pip
         pip install -r requirements.txt
       working-directory: ./
@@ -51,7 +52,6 @@ jobs:
     - name: Run tests
       run: python manage.py test
       env:
-        SECRET_KEY: ${{secrets.SECRET_KEY}}
         DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
         REDIS_URL: redis://localhost:6379/0
 
