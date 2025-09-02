@@ -80,7 +80,7 @@ DATABASES = {
         'USER': config("DB_USER", cast=str, default="postgres"),
         'PASSWORD': config("DB_PASSWORD", cast=str, default="postgres"),
         'HOST': config("DB_HOST", cast=str, default="localhost"),
-        'PORT': config("DB_PORT", cast=str, defaul=5432),
+        'PORT': config("DB_PORT", cast=str, default=5432),
     }
 }
 
