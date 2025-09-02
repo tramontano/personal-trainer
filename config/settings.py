@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from decouple import config
+from traitlets import default
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,10 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': config("DB_ENGINE", cast=str, default=DB_DEFAULT),
         'NAME': config("DB_NAME", cast=str, default=BASE_DIR / "db.sqlite3"),
-        'USER': config("DB_USER", cast=str),
-        'PASSWORD': config("DB_PASSWORD", cast=str),
-        'HOST': config("DB_HOST", cast=str),
-        'PORT': config("DB_PORT", cast=str),  # 5432 by default
+        'USER': config("DB_USER", cast=str, default="postgres"),
+        'PASSWORD': config("DB_PASSWORD", cast=str, default="postgres"),
+        'HOST': config("DB_HOST", cast=str, default="localhost"),
+        'PORT': config("DB_PORT", cast=str, defaul=5432),
     }
 }
 
