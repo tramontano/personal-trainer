@@ -44,7 +44,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        export SECRET_KEY=${{ secrets.SECRET_KEY }}
+        echo SECRET_KEY="${{ secrets.SECRET_KEY }}" >> .env
         python -m pip install --upgrade pip
         pip install -r requirements.txt
       working-directory: ./
