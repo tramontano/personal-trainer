@@ -54,7 +54,7 @@ coverage==7.3.2
 # Code Quality
 flake8==6.1.0
 black==25.1.0
-isort==5.12.0
+isort==6.0.1
 pre-commit==3.5.0
 
 # Production
