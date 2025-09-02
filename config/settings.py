@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY", cast=str)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", cast=bool)
+DEBUG = config("DEBUG", cast=bool, default=False)
 
-ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=list)
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=list, default=[])
 
 
 # Application definition
@@ -74,13 +74,13 @@ WSGI_APPLICATION = "config.wsgi.application"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 DB_DEFAULT = "django.db.backends.sqlite3"
 DATABASES = {
-    'default': {
-        'ENGINE': config("DB_ENGINE", cast=str, default=DB_DEFAULT),
-        'NAME': config("DB_NAME", cast=str, default=BASE_DIR / "db.sqlite3"),
-        'USER': config("DB_USER", cast=str),
-        'PASSWORD': config("DB_PASSWORD", cast=str),
-        'HOST': config("DB_HOST", cast=str),
-        'PORT': config("DB_PORT", cast=str),  # 5432 by default
+    "default": {
+        "ENGINE": config("DB_ENGINE", cast=str, default=DB_DEFAULT),
+        "NAME": config("DB_NAME", cast=str, default=BASE_DIR / "db.sqlite3"),
+        "USER": config("DB_USER", cast=str, default="postgres"),
+        "PASSWORD": config("DB_PASSWORD", cast=str, default="postgres"),
+        "HOST": config("DB_HOST", cast=str, default="localhost"),
+        "PORT": config("DB_PORT", cast=str, default=5432),
     }
 }
 
@@ -120,7 +120,7 @@ USE_TZ = True
 STATICFILES_BASE_DIR = BASE_DIR / "static"
 STATICFILES_BASE_DIR.mkdir(exist_ok=True, parents=True)
 STATICFILES_VENDOR_DIR = STATICFILES_BASE_DIR / "vendors"
-STATIC_URL = 'static/'
+STATIC_URL = "static/"
 STATICFILES_DIRS = []
 # output for python manage.py collectstatic
 # local cdn
