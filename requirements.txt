@@ -25,7 +25,7 @@ django-storages==1.14.2
 boto3==1.40.21
 
 # Payments
-stripe==7.7.0
+stripe==12.5.0
 
 # Email & SMS
 sendgrid==6.10.0
