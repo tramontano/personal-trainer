@@ -1,3 +1,4 @@
+[![CI/CD Pipeline](https://github.com/tramontano/personal-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/tramontano/personal-trainer/actions/workflows/ci.yml)
 # Personal Trainer App - Plataforma Open-Source para Personal Trainers
 
 Uma plataforma completa e open-source para personal trainers independentes gerenciarem seus negócios, com foco em musculação e treinamento funcional. Inspirada no Exercise.com, desenvolvida com Django e PostgreSQL.
