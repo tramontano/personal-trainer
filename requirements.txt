@@ -41,8 +41,8 @@ sentry-sdk==2.35.2
 django-extensions==4.1
 
 # Development Tools
+factory-boy==3.3.3
 django-debug-toolbar==6.0.0
-factory-boy==3.3.0
 faker==37.6.0
 
 # Testing
