@@ -1,18 +1,18 @@
-version: '3.8'
-
 services:
   db:
     image: postgres:14
+    env_file:
+      - .env
     environment:
-      POSTGRES_DB: personal_trainer_db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - ${DB_PORT}:5432
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "psql -U ${DB_USER} -d ${DB_NAME} -c 'SELECT 1' || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -37,9 +37,9 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DEBUG=True
+      #- DEBUG=True
       - DB_HOST=db
-      - REDIS_URL=redis://redis:6379/0
+      #- REDIS_URL=redis://redis:6379/0
     depends_on:
       db:
         condition: service_healthy
@@ -54,9 +54,9 @@ services:
     volumes:
       - .:/app
     environment:
-      - DEBUG=True
+      #- DEBUG=True
       - DB_HOST=db
-      - REDIS_URL=redis://redis:6379/0
+      #- REDIS_URL=redis://redis:6379/0
     depends_on:
       - db
       - redis
@@ -70,9 +70,9 @@ services:
     volumes:
       - .:/app
     environment:
-      - DEBUG=True
+      #- DEBUG=True
       - DB_HOST=db
-      - REDIS_URL=redis://redis:6379/0
+      #- REDIS_URL=redis://redis:6379/0
     depends_on:
       - db
       - redis
@@ -88,9 +88,9 @@ services:
     ports:
       - "5555:5555"
     environment:
-      - DEBUG=True
+      #- DEBUG=True
       - DB_HOST=db
-      - REDIS_URL=redis://redis:6379/0
+      #- REDIS_URL=redis://redis:6379/0
     depends_on:
       - celery
     env_file:
