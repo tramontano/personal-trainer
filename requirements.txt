@@ -29,7 +29,7 @@ stripe==7.7.0
 
 # Email & SMS
 sendgrid==6.10.0
-twilio==8.10.0
+twilio==9.7.2
 
 # Background Tasks
 celery==5.3.4
