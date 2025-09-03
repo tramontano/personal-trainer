@@ -25,24 +25,24 @@ django-storages==1.14.2
 boto3==1.40.21
 
 # Payments
-stripe==7.7.0
+stripe==12.5.0
 
 # Email & SMS
 sendgrid==6.10.0
 twilio==8.10.0
 
 # Background Tasks
-celery==5.3.4
+celery==5.5.3
 django-celery-beat==2.8.1
 django-celery-results==2.5.1
 
 # Monitoring & Logging
 sentry-sdk==2.35.2
-django-extensions==3.2.3
+django-extensions==4.1
 
 # Development Tools
+factory-boy==3.3.3
 django-debug-toolbar==6.0.0
-factory-boy==3.3.0
 faker==37.6.0
 
 # Testing
@@ -59,7 +59,7 @@ pre-commit==3.5.0
 
 # Production
 gunicorn==23.0.0
-whitenoise==6.6.0
+whitenoise==6.9.0
 dj-database-url==3.0.1
 
 # Transitive dependency management
