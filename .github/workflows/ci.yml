@@ -1,8 +1,6 @@
 name: CI/CD Pipeline
 
 on:
-  push:
-    branches: [ main, develop ]
   pull_request:
     branches: [ main ]
 
@@ -44,6 +42,7 @@ jobs:
     
     - name: Install dependencies
       run: |
+        echo SECRET_KEY="${{ secrets.SECRET_KEY }}" >> .env
         python -m pip install --upgrade pip
         pip install -r requirements.txt
       working-directory: ./
