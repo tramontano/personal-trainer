@@ -21,9 +21,3 @@ jobs:
         source_ref: 'develop'
         target_branch: 'main'
         commit_message_template: '[Automated] Merged {source_ref} into {target_branch}'
-
-    - name: Invoke pre-release workflow
-      uses: benc-uk/workflow-dispatch@v1.2.4
-      with:
-        workflow: Nightly Prerelease
-        token: ${{ secrets.GITHUB_TOKEN }}
