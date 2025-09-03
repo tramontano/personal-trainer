@@ -14,7 +14,7 @@ python-decouple==3.8
 
 # Authentication & Security
 cryptography==45.0.7
-PyJWT==2.8.0
+PyJWT==2.10.1
 
 # API Documentation
 drf-spectacular==0.26.5
