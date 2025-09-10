@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-10 10:44-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+#: apps/core/templates/core/home.html:7
+msgid "Personal Trainer App"
+msgstr "App Entrenador Personal"
+
+#: apps/core/templates/core/home.html:55
+msgid "Funcionalidades Principais"
+msgstr "Funcionalidades Principales"
+
+#: apps/core/templates/core/home.html:57 apps/core/views.py:28
+msgid "Gestão de Clientes"
+msgstr "Gestión de Clientes"
+
+#: apps/core/templates/core/home.html:58 apps/core/views.py:29
+msgid "Avaliação Física Digital"
+msgstr "Evaluación Física Digital"
+
+#: apps/core/templates/core/home.html:59 apps/core/views.py:30
+msgid "Agendamento Inteligente"
+msgstr "Programación Inteligente"
+
+#: apps/core/templates/core/home.html:60 apps/core/views.py:31
+msgid "Planos de Treino"
+msgstr "Planes de Entrenamiento"
+
+#: apps/core/templates/core/home.html:63
+msgid "Teste de Idiomas"
+msgstr "Prueba de Idiomas"
+
+#: apps/core/templates/core/home.html:65
+msgid "Idioma atual"
+msgstr "Idioma actual"
+
+#: apps/core/views.py:10 apps/core/views.py:26
+msgid "Bem-vindo ao Personal Trainer App"
+msgstr "Bienvenido a la App Entrenador Personal"
+
+#: apps/core/views.py:11 apps/core/views.py:27
+msgid "Plataforma completa para personal trainers gerenciarem seus negócios"
+msgstr "Plataforma completa para que los entrenadores personales gestionen sus negocios"
+
+#: apps/core/views.py:34
+msgid "Teste de Internacionalização"
+msgstr "Prueba de Internacionalización"
