@@ -43,4 +43,3 @@ def language_test(request):
     html_content += "</ul>"
 
     return HttpResponse(html_content)
-

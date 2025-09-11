@@ -7,4 +7,3 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('language-test/', views.language_test, name='language_test'),
 ]
-

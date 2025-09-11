@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
 
 from decouple import config
 
@@ -208,7 +209,6 @@ CORS_ALLOWED_ORIGINS = config(
 )
 
 # JWT Configuration
-from datetime import timedelta
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(
         minutes=config("JWT_ACCESS_TOKEN_LIFETIME", cast=int, default=15)
@@ -218,4 +218,3 @@ SIMPLE_JWT = {
     ),
     'ROTATE_REFRESH_TOKENS': True,
 }
-
