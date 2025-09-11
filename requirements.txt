@@ -59,7 +59,7 @@ pre-commit==3.5.0
 
 # Production
 gunicorn==23.0.0
-whitenoise==6.9.0
+whitenoise==6.10.0
 dj-database-url==3.0.1
 
 # Transitive dependency management
