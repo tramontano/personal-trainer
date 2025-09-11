@@ -37,7 +37,7 @@ django-celery-beat==2.8.1
 django-celery-results==2.5.1
 
 # Monitoring & Logging
-sentry-sdk==2.35.2
+sentry-sdk==2.37.1
 django-extensions==4.1
 
 # Development Tools
