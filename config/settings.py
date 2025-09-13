@@ -27,7 +27,11 @@ SECRET_KEY = config("SECRET_KEY", cast=str)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast=bool, default=False)
 
-ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=list, default=[])
+ALLOWED_HOSTS = config(
+    "ALLOWED_HOSTS",
+    cast=lambda v: [s.strip() for s in v.split(',')],
+    default=['localhost', '127.0.0.1', 'testserver']
+)
 
 
 # Application definition
@@ -39,11 +43,27 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Third party apps
+    "rest_framework",
+    "corsheaders",
+    "drf_spectacular",
+    # Local apps
+    "apps.core",
+    "apps.users",
+    "apps.workouts",
+    "apps.business",
+    "apps.payments",
+    "apps.marketing",
+    "apps.analytics",
+    "apps.notifications",
+    "apps.api",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -90,7 +110,10 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "NAME": (
+            "django.contrib.auth.password_validation."
+            "UserAttributeSimilarityValidator"
+        ),
     },
     {
         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
@@ -107,11 +130,23 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = config("LANGUAGE_CODE", cast=str, default="pt-br")
 
-TIME_ZONE = "UTC"
+LANGUAGES = [
+    ("pt-br", "Português (Brasil)"),
+    ("en", "English"),
+    ("es", "Español"),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / "locale",
+]
+
+TIME_ZONE = config("TIME_ZONE", cast=str, default="America/Sao_Paulo")
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 
@@ -137,3 +172,50 @@ STORAGES = {
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# Django REST Framework Configuration
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 20,
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+# DRF Spectacular Configuration
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Personal Trainer API',
+    'DESCRIPTION': 'API para plataforma de personal trainers',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
+
+# CORS Configuration
+CORS_ALLOW_ALL_ORIGINS = config("CORS_ALLOW_ALL_ORIGINS", cast=bool, default=True)
+CORS_ALLOWED_ORIGINS = config(
+    "CORS_ALLOWED_ORIGINS",
+    cast=lambda v: [s.strip() for s in v.split(',')],
+    default=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ]
+)
+
+# JWT Configuration
+from datetime import timedelta
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(
+        minutes=config("JWT_ACCESS_TOKEN_LIFETIME", cast=int, default=15)
+    ),
+    'REFRESH_TOKEN_LIFETIME': timedelta(
+        days=config("JWT_REFRESH_TOKEN_LIFETIME", cast=int, default=7)
+    ),
+    'ROTATE_REFRESH_TOKENS': True,
+}
+
